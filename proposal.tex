@@ -58,63 +58,86 @@ Information visualization concerns itself with presenting data so as to facilita
 %When that data is in the form of objects and relationships, the traditional representation has been a graph, with nodes representing the objects and the edges between them representing their relationships.
 %This still leaves much freedom in the placement of the nodes and arrangement of the edges, and 
 This still leaves open how one should evaluate such a visualization. 
-Should it be usability, but if so for what purpose?
-Does attractiveness or memorability play a role?
+Should the main factor be usability, but if so then usability for what purpose?
+Do attractiveness and memorability play a role?
 %Thus the question of whether or not a visualization is ``pretty" at first seems only tangentially related.
 % attractiveness, usability, what have you
-Thus, the question of how aesthetics influences usability and user interaction with a visualization is a core question in this field. 
+Thus, the question of how aesthetics influences usability and user interaction with a given visualization is a core question in this field. 
 \\
 
 A basic assumption of that question is that it is known what it means for something to be aesthetically pleasing. 
 In fact, this is the topic of much research in the area of gestalt psychology. 
-There, many principles have been identified and untersuched that help something to be perceived as a unified whole, or gestalt, more than the simple sum of its parts. For example, the principle of similarity states that people tend to perceive similar objects as parts of a whole (see Fig.~\ref{fig:sim}). It makes sense to build upon this research in asking how the individual gestalt principles contribute to a ``better" graph visualization.
-\begin{comment}
-\begin{figure}[h!]
-	\floatbox[{\capbeside\thisfloatsetup{capbesideposition={left,center},capbesidewidth=5cm}}]{figure}[\FBwidth]
-	{\caption{``The example [to the right] (containing 11 distinct objects) appears as a single unit because all of the shapes have similarity." (Spokane Falls GD)}\label{fig:sim}}
-	{\includegraphics{similarity01.png}}
-\end{figure}
-\end{comment}
+There, many principles have been identified and investigated that help something to be perceived as a unified whole, or gestalt, more than the simple sum of its parts. 
+For example, the principle of similarity states that people tend to perceive similar objects as parts of a whole (see Fig.~\ref{fig:sim}). 
+It makes sense to build upon this research in asking how the individual gestalt principles contribute to a ``better" graph visualization.
+Our hypothesis is that gestalt principles contribute to aesthetic appeal and analytic performance in force directed layout networks.
+%\begin{figure}[h!]
+%	\floatbox[{\capbeside\thisfloatsetup{capbesideposition={left,center},capbesidewidth=5cm}}]{figure}[\FBwidth]
+%	{\caption{``The example [to the right] (containing 11 distinct objects) appears as a single unit because all of the shapes have similarity." (Spokane Falls GD)}\label{fig:sim}}
+%	{\includegraphics{similarity01.png}}
+%\end{figure}
 \\
 
-Naturally, previous research in graph visualization will also play a role.
+The plan is to design and conduct a survey which will present subjects with graph embeddings following various gestalt principles to varying degrees and then ask users to perform tasks and provide preferences.
+We will use these responses to evaluate which graphs are more aesthetically appealing and/or usable, and thus whether and which gestalt principles had the most impact. 
+The generation of these graphs will require an extensive literature survey to match gestalt principles to the layout heuristics, such as minimizing edge crossings, which have tended to be the focus of previous graph visualization research. 
+%Thus, an extensive survey of the literature must be done first to match heuristics to the gestalt principles they most closely align with in order to generate the graphs we will show to subjects.
+We will perform this survey of the literature with the aid of the StarVis system (?), which allows sources to be tagged and searched in an intuitive manner (cite).
+Once the matchings between heuristics and gestalt principles have been identified, we can design and then carry out the user study.
+\\
+(Add something about making the literature survey available, or is it just for us?)
+\\
+
+We have yet to decide whether the user study will be conducted in person or, for example, via Amazon's Mechanical Turk. In either case, as we would prefer a between user study, the length and thus the number of test factors will need to be limited in order to retain the interest of our subjects. \\
+Actually, there are a lot of ``survey design heuristics"---is it really worth listing them? I can go back and do more if necessary
+\\
+
+So...anything left to discuss?
 
 
 
-we have developed a series of hypotheses:
-\begin{enumerate}[label=H\arabic*:]
-	\item If the picture looks like a map is will be more appealing
-	\item If the picture exhibits clear gestalt (closure, continuation, proximity) principles it will be more appealing
-	\item If the picture has a high degree of familiarity (is more familiar) it enhances the pipeline
-	\item Curved edges increase the attractiveness
-	\item Data from studies of appeal can be analysed to determine underlying display properties (dimensions)
-	\item Faces as circles (local measure of Aspect Ratio) means this will be more attractive
-\end{enumerate}
 
 
 
-\newpage
-The goal:\\
-To figure out links between how well a graph visualization corresponds to gestalt principles of psychology and its attractiveness/usability/what have you.
-
-Important because:\\
-Big Data! Woo. (Note, this is a name drop, not a point)\\
-Well, information is useless unless you know what it is (can visualize it), and if it's a ``bad" visualization, that's bad, so you'd prefer a ``better" visualization. Only what's that?\\
-What's out there?: well...
-
-Information visualization concerns itself with presenting data so as to facilitate interpretation of it. 
-Thus the question of whether or not a visualization is ``pretty" at first seems only tangentially related.
-However, the question of how ``prettiness," or aesthetics, influences usability and user interaction with a visualization is a core question. 
-
-Form:\\
-Research paper(, framework for generating graphs as for survey?)
-
-The plan:\\
-Survey of lit, survey of people, analysis of results\\
 
 
-In final form, include:\\
-questions/hypotheses, methods, theoretical/methodological framework, resources (e.g. library, archival, survey, interview...)
+
+
+% Actually I think the following was in relation to something else:
+%we have developed a series of hypotheses:
+%\begin{enumerate}[label=H\arabic*:]
+%	\item If the picture looks like a map is will be more appealing
+%	\item If the picture exhibits clear gestalt (closure, continuation, proximity) principles it will be more appealing
+%	\item If the picture has a high degree of familiarity (is more familiar) it enhances the pipeline
+%	\item Curved edges increase the attractiveness
+%	\item Data from studies of appeal can be analysed to determine underlying display properties (dimensions)
+%	\item Faces as circles (local measure of Aspect Ratio) means this will be more attractive
+%\end{enumerate}
+
+
+
+%\newpage
+%The goal:\\
+%To figure out links between how well a graph visualization corresponds to gestalt principles of psychology and its attractiveness/usability/what have you.
+%
+%Important because:\\
+%Big Data! Woo. (Note, this is a name drop, not a point)\\
+%Well, information is useless unless you know what it is (can visualize it), and if it's a ``bad" visualization, that's bad, so you'd prefer a ``better" visualization. Only what's that?\\
+%What's out there?: well...
+%
+%Information visualization concerns itself with presenting data so as to facilitate interpretation of it. 
+%Thus the question of whether or not a visualization is ``pretty" at first seems only tangentially related.
+%However, the question of how ``prettiness," or aesthetics, influences usability and user interaction with a visualization is a core question. 
+%
+%Form:\\
+%Research paper(, framework for generating graphs as for survey?)
+%
+%The plan:\\
+%Survey of lit, survey of people, analysis of results\\
+%
+%
+%In final form, include:\\
+%questions/hypotheses, methods, theoretical/methodological framework, resources (e.g. library, archival, survey, interview...)
 
 
 \begin{comment}
