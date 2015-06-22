@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[12pt, twocolumn]{article}
 
 \usepackage[tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in]{geometry}
 \usepackage{setspace}
@@ -10,14 +10,22 @@
 \setlist[enumerate]{itemsep=0mm}
 
 
+
+\title{\vspace{-.5in}Gestalt visualization proposal}
+%\title{\vspace{-1cm}Honors Thesis Proposal: Gestalt Visualization}
+\author{} %Laura Vonessen, \today}
+%\date{Due May 6, but received extension since studying abroad}
+\date{\vspace{-.7in}}
+
+
 \begin{document}
-{\raggedleft 
-	Laura Vonessen\\
-	Honors Thesis Proposal\\ 
+%{\raggedleft 
+%	Laura Vonessen\\
+%	Honors Thesis Proposal\\ 
 %	Due May 6 but got extension from Kate Schwartz of HC since studying abroad\\ 
 %	SID: 23156536\\
-}
-
+%}
+\maketitle
 
 \begin{comment}
 Thesis proposal guidelines:
@@ -49,7 +57,7 @@ Thesis proposal guidelines:
 	o	For humans, get research permissions
 \end{comment}
 
-\section{Proposal}
+%\section{Proposal}
 
 %OUTLINE:
 
@@ -71,11 +79,14 @@ There, many principles have been identified and investigated that help something
 For example, the principle of similarity states that people tend to perceive similar objects as parts of a whole (see Fig.~\ref{fig:sim}). 
 It makes sense to build upon this research in asking how the individual gestalt principles contribute to a ``better" graph visualization.
 Our hypothesis is that gestalt principles contribute to aesthetic appeal and analytic performance in force directed layout networks.
-%\begin{figure}[h!]
-%	\floatbox[{\capbeside\thisfloatsetup{capbesideposition={left,center},capbesidewidth=5cm}}]{figure}[\FBwidth]
-%	{\caption{``The example [to the right] (containing 11 distinct objects) appears as a single unit because all of the shapes have similarity." (Spokane Falls GD)}\label{fig:sim}}
-%	{\includegraphics{similarity01.png}}
-%\end{figure}
+\begin{figure}[h!]
+%	\floatbox[{\capbeside\thisfloatsetup{capbesideposition={left,center},capbesidewidth=5cm}}]{figure}[\FBwidth]{
+	\caption{\small``The example above (containing 11 distinct objects) appears as a \emph{single unit} because all of the shapes have \emph{similarity}." (reproduced from Spokane Falls GD, cite!)}
+	\label{fig:sim}
+%	}{
+	\includegraphics[width=5cm]{similarity01.png}
+%	}
+\end{figure}
 \\
 
 The plan is to design and conduct a survey which will present subjects with graph embeddings following various gestalt principles to varying degrees and then ask users to perform tasks and provide preferences.
@@ -89,7 +100,7 @@ Once the matchings between heuristics and gestalt principles have been identifie
 \\
 
 We have yet to decide whether the user study will be conducted in person or, for example, via Amazon's Mechanical Turk. In either case, as we would prefer a between user study, the length and thus the number of test factors will need to be limited in order to retain the interest of our subjects. \\
-Actually, there are a lot of ``survey design heuristics"---is it really worth listing them? I can go back and do more if necessary
+Actually, there are a lot of ``survey design heuristics"---is it really worth listing them? I can go back and do more if necessary.
 \\
 
 So...anything left to discuss?
