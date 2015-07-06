@@ -1,6 +1,6 @@
 \documentclass[12pt, twocolumn]{article}
 
-\usepackage[tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in]{geometry}
+\usepackage[tmargin=.8in,bmargin=.8in,lmargin=1in,rmargin=1in]{geometry}
 \usepackage{setspace}
 \usepackage{comment}
 \usepackage{enumitem}
@@ -26,6 +26,9 @@
 %	SID: 23156536\\
 %}
 \maketitle
+
+
+\thispagestyle{empty}
 
 \begin{comment}
 Thesis proposal guidelines:
@@ -65,7 +68,8 @@ Thesis proposal guidelines:
 Information visualization concerns itself with presenting data so as to facilitate interpretation of it. 
 %When that data is in the form of objects and relationships, the traditional representation has been a graph, with nodes representing the objects and the edges between them representing their relationships.
 %This still leaves much freedom in the placement of the nodes and arrangement of the edges, and 
-This still leaves open how one should evaluate such a visualization. 
+In graph visualization, this information comes in the form of a graph, with the information typically organized as objects (nodes) and relationships between them (edges).
+This still leaves open the evaluation of such a visualization. 
 Should the main factor be usability, but if so then usability for what purpose?
 Do attractiveness and memorability play a role?
 %Thus the question of whether or not a visualization is ``pretty" at first seems only tangentially related.
@@ -76,34 +80,49 @@ Thus, the question of how aesthetics influences user interactions with and react
 A basic assumption of that question is that it is known what it means for something to be aesthetically pleasing. 
 In fact, this is the topic of much research in the area of gestalt psychology. 
 There, many principles have been identified and investigated that help something to be perceived as a unified whole, or gestalt, more than the simple sum of its parts. 
-For example, the principle of similarity states that people tend to perceive similar objects as parts of a whole (see Fig.~\ref{fig:sim}). 
+For example, the principle of similarity states that people tend to perceive similar objects as parts of a whole, or the dissimilar object among a set of similar ones as the focus (see Fig.~\ref{fig:sim}). 
 It makes sense to build upon this research in asking how the individual gestalt principles contribute to a ``better" graph visualization.
-Our hypothesis is that gestalt principles contribute to aesthetic appeal and analytic performance in force directed layout networks.
-\begin{figure}[h!]
-%	\floatbox[{\capbeside\thisfloatsetup{capbesideposition={left,center},capbesidewidth=5cm}}]{figure}[\FBwidth]{
-	\caption{\small``The example above (containing 11 distinct objects) appears as a \emph{single unit} because all of the shapes have \emph{similarity}." (reproduced from Spokane Falls GD, cite!)}
+Our hypothesis is that gestalt principles contribute to both aesthetic appeal and analytic performance in force-directed layout networks.
+\begin{figure}[b]
+	%	\floatbox[{\capbeside\thisfloatsetup{capbesideposition={left,center},capbesidewidth=5cm}}]{figure}[\FBwidth]{
+	\caption{\small ``The figure on the far right becomes a focal point because it is dissimilar to the other shapes." (reproduced from Spokane Falls GD, cite!)}
 	\label{fig:sim}
-%	}{
-	\includegraphics[width=5cm]{similarity01.png}
-%	}
+	%	}{
+	\includegraphics[width=.9\linewidth]{anomaly01.png}
+	%	}
 \end{figure}
+%\begin{figure}[h!]
+%%	\floatbox[{\capbeside\thisfloatsetup{capbesideposition={left,center},capbesidewidth=5cm}}]{figure}[\FBwidth]{
+%	\caption{\small``The example above (containing 11 distinct objects) appears as a \emph{single unit} because all of the shapes have \emph{similarity}." (reproduced from Spokane Falls GD, cite!)}
+%	\label{fig:sim}
+%%	}{
+%	\includegraphics[width=5cm]{similarity01.png}
+%%	}
+%\end{figure}
 \\
 
-The plan is to design and conduct a survey which will present subjects with graph embeddings following various gestalt principles to varying degrees and then ask users to perform tasks and provide preferences.
-We will use these responses to evaluate which graphs are more aesthetically appealing and/or usable, and thus whether and which gestalt principles had the most impact. 
-The generation of these graphs will require an extensive literature survey to match gestalt principles to the layout heuristics, such as minimizing edge crossings, which have tended to be the focus of previous graph visualization research. 
+To evaluate this hypothesis, we must first conduct a survey of the literature in order to match gestalt principles to the graph layout heuristics, such as minimizing edge crossings, which have tended to be the focus of previous graph visualization research. 
 %Thus, an extensive survey of the literature must be done first to match heuristics to the gestalt principles they most closely align with in order to generate the graphs we will show to subjects.
-We will perform this survey of the literature with the aid of the StarVis system (?), which allows sources to be tagged and searched in an intuitive manner (cite).
-Once the matchings between heuristics and gestalt principles have been identified, we can design and then carry out the user study.
+We will perform this survey of the literature with the aid of the SurVis system, which allows sources to be tagged and searched in an intuitive manner (cite).
+Once the matchings between heuristics and gestalt principles have been identified, we plan to make a poster showing these and submit it to GD. 
+At that point, we will have the information we need to choose the gestalt principles to test in our user study, and we will know which graph heuristics to use to generate graphs which do or do not follow these principles.
 \\
 (Add something about making the literature survey available, or is it just for us?)
 \\
 
-We have yet to decide whether the user study will be conducted in person or, for example, via Amazon's Mechanical Turk. In either case, as we would prefer a between user study, the length and thus the number of test factors will need to be limited in order to retain the interest of our subjects. \\
-Actually, there are a lot of ``survey design heuristics"---is it really worth listing them? I can go back and do more if necessary.
-\\
 
-So...anything left to discuss?
+% The user study
+The user study will present subjects with graph embeddings following these  gestalt principles to varying degrees.
+%We have yet to decide whether the user study will be conducted in person or, for example, via Amazon's Mechanical Turk. 
+To ensure our answers are minimally biased, users will be asked to perform tasks and provide preferences instead of merely telling us which graphs are most aesthetically pleasing and ``useful."
+Thus, each graph will have several questions associated with it, and as we would prefer a within user 
+% In between, participants see only one set of conditions---thus, you need more participants.
+% In within, participants see all sets of conditions---thus, can make comparisons for how this person reacted to the different conditions. Requires shorter question(s/-sets) because can’t tire them out.
+study, the length and thus the number of test factors will need to be limited in order to retain the interest of our subjects. 
+Fortunately, the principle/heuristic table will help us to do so.
+Finally, we will need to translate the responses to our questions into answers as straightforward as possible on which graphs are more aesthetically appealing and/or usable, and thus whether and which gestalt principles have the most impact. 
+%The generation of these graphs will require an extensive literature survey to 
+
 
 
 
