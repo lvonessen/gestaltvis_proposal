@@ -11,7 +11,7 @@
 
 
 
-\title{\vspace{-.5in}Gestalt visualization proposal}
+\title{\vspace{-.5in}Gestalt principles in graph visualization}
 %\title{\vspace{-1cm}Honors Thesis Proposal: Gestalt Visualization}
 \author{} %Laura Vonessen, \today}
 %\date{Due May 6, but received extension since studying abroad}
@@ -28,7 +28,7 @@
 \maketitle
 
 
-\thispagestyle{empty}
+%\thispagestyle{empty}
 
 \begin{comment}
 Thesis proposal guidelines:
@@ -60,7 +60,7 @@ Thesis proposal guidelines:
 	o	For humans, get research permissions
 \end{comment}
 
-%\section{Proposal}
+\section{Proposal}
 
 %OUTLINE:
 
@@ -68,9 +68,9 @@ Thesis proposal guidelines:
 Information visualization concerns itself with presenting data so as to facilitate interpretation of it. 
 %When that data is in the form of objects and relationships, the traditional representation has been a graph, with nodes representing the objects and the edges between them representing their relationships.
 %This still leaves much freedom in the placement of the nodes and arrangement of the edges, and 
-In graph visualization, this information comes in the form of a graph, with the information typically organized as objects (nodes) and relationships between them (edges).
+In graph visualization, this information comes in the form of a graph, with the information typically organized as nodes (objects) and edges (the relationships between them).
 This still leaves open the evaluation of such a visualization. 
-Should the main factor be usability, but if so then usability for what purpose?
+If the main factor is usability, then usability for what purpose?
 Do attractiveness and memorability play a role?
 %Thus the question of whether or not a visualization is ``pretty" at first seems only tangentially related.
 % attractiveness, usability, what have you
@@ -85,7 +85,7 @@ It makes sense to build upon this research in asking how the individual gestalt 
 Our hypothesis is that gestalt principles contribute to both aesthetic appeal and analytic performance in force-directed layout networks.
 \begin{figure}[b]
 	%	\floatbox[{\capbeside\thisfloatsetup{capbesideposition={left,center},capbesidewidth=5cm}}]{figure}[\FBwidth]{
-	\caption{\small ``The figure on the far right becomes a focal point because it is dissimilar to the other shapes." (reproduced from Spokane Falls GD, cite!)}
+	\caption{\small ``The figure on the far right becomes a focal point because it is dissimilar to the other shapes." (reproduced from [2])}
 	\label{fig:sim}
 	%	}{
 	\includegraphics[width=.9\linewidth]{anomaly01.png}
@@ -103,19 +103,19 @@ Our hypothesis is that gestalt principles contribute to both aesthetic appeal an
 
 To evaluate this hypothesis, we must first conduct a survey of the literature in order to match gestalt principles to the graph layout heuristics, such as minimizing edge crossings, which have tended to be the focus of previous graph visualization research. 
 %Thus, an extensive survey of the literature must be done first to match heuristics to the gestalt principles they most closely align with in order to generate the graphs we will show to subjects.
-We will perform this survey of the literature with the aid of the SurVis system, which allows sources to be tagged and searched in an intuitive manner (cite).
+We will perform this survey of the literature with the aid of the SurVis system, which allows sources to be tagged and searched in an intuitive manner [1].
 Once the matchings between heuristics and gestalt principles have been identified, we plan to make a poster showing these and submit it to GD. 
 At that point, we will have the information we need to choose the gestalt principles to test in our user study, and we will know which graph heuristics to use to generate graphs which do or do not follow these principles.
 \\
-(Add something about making the literature survey available, or is it just for us?)
-\\
+%(Add something about making the literature survey available, or is it just for us?)
+%\\
 
 
 % The user study
 The user study will present subjects with graph embeddings following these  gestalt principles to varying degrees.
 %We have yet to decide whether the user study will be conducted in person or, for example, via Amazon's Mechanical Turk. 
 To ensure our answers are minimally biased, users will be asked to perform tasks and provide preferences instead of merely telling us which graphs are most aesthetically pleasing and ``useful."
-Thus, each graph will have several questions associated with it, and as we would prefer a within user 
+Thus, each graph will have several questions associated with it, and as we would prefer a within-user 
 % In between, participants see only one set of conditions---thus, you need more participants.
 % In within, participants see all sets of conditions---thus, can make comparisons for how this person reacted to the different conditions. Requires shorter question(s/-sets) because can’t tire them out.
 study, the length and thus the number of test factors will need to be limited in order to retain the interest of our subjects. 
@@ -175,7 +175,7 @@ Finally, we will need to translate the responses to our questions into answers a
 % % % % % % % % % % % % % % % % % % % %
 % % The Honors College recommends a ``syllabus" with the proposal
 % % % % % % % % % % % % % % % % % % % %
-\section{Syllabus}
+\section{``Syllabus"}
 \subsection{Aspirational learning outcomes}
 % I am not at fault for the ridiculous title of this subsection
 % Blame the honors college
@@ -183,28 +183,30 @@ Gain skills in:
 \begin{enumerate}
 	\item Research methods/processes
 	\item Reading papers
-	\item Designing/carrying out a survey
+	\item Making and submitting a poster
+	\item Designing/carrying out a user study
 	\item Compiling results into a paper
 	\item Steps involved in publishing a paper
 \end{enumerate}
 \subsection{Expected work}
 Phase 1
 \begin{enumerate}
-	\item Survey of gestalt/graph vis papers (Scan papers, decide most relevant, read those more in depth, discuss with Stephen and compare)
-	\item Use StarVis to compile/organize what's there/what's relevant
-	\item Update gestalt-heuristics matchings
+	\item Survey of gestalt/graph visualization papers (Scan papers, decide most relevant, read those more in depth, discuss and compare)
+	\item Use the SurVis system to compile/organize what's there/what's relevant
+	\item Create a table where papers' findings of correlations between gestalt principles and layout heuristics are collected
 \end{enumerate}
 Phase 2
 \begin{enumerate}
-	\item Make a poster
-	\item Use phase 1 work to update hypotheses/survey goals
-	\item Program visualizations, etc, to spread over factors want to test
-	\item Design survey to gather that info
+	\item Make a poster presenting the information from that table in an appealing way.
+	\item Use phase 1 work to update hypotheses/user study goals and choose the most relevant gestalt principles to test
+	\item Program visualizations, etc, to display graphs satisfying the gestalt principles we will test to varying degrees
+	\item Design tasks to gather usability and preference data from subjects
 \end{enumerate}
+\newpage
 Phase 3
 \begin{enumerate}
-	\item Conduct prototype study as test run and make any necessary modifications (make sure likely to collect the data we're looking for)
-	\item Run full user study
+	\item Conduct prototype study as test run and make any necessary modifications (make sure our design is likely to collect usable data)
+	\item Run the full user study
 \end{enumerate}
 Phase 4
 \begin{enumerate}
@@ -214,29 +216,37 @@ Phase 4
 \end{enumerate}
 \subsection{Expected meetings}
 \begin{enumerate}
-	\item At least once a week (on skype, after no longer in same country)
-	\item Plus email
-	\item Plus anything else that comes up?
+	\item At least once a week (on skype when in-person not possible)
+%	\item Plus email
+%	\item Plus anytime anything else comes up
 \end{enumerate}
 \subsection{Expected product(s)}
 \begin{enumerate}
-	\item Survey of existing lit(?)
-	\item Framework to generate survey graphs(?)
-	\item Data from survey
+	\item Survey of existing literature organized using SurVis
+	\item Poster
+%	\item Framework to generate user study graphs(?)
+	\item Data from user study
 	\item Research paper
 \end{enumerate}
 \subsection{Criteria for evaluation}
 \begin{enumerate}
 	\item Work completed with reasonable thoroughness, best practices
-	\item Completed on reasonable timeline (Note: phases not entirely sequential), for example:
-	\begin{enumerate}
-		\item Phase 1 by mid July (3 weeks)
-		\item Phase 2 by first week of August (3 more)
-		\item Phase 3 by early Sept (4 weeks)
-		\item Phase 4 by end Sept (2.5?) (two possible conference deadlines)
-	\end{enumerate}
-	\item ???
+	\item Completed on reasonable timeline (Note: phases are not entirely sequential)
+%	, for example:
+%	\begin{enumerate}
+%		\item Phase 1 by mid July (3 weeks)
+%		\item Phase 2 by first week of August (3 more)
+%		\item Phase 3 by early Sept (4 weeks)
+%		\item Phase 4 by end Sept (2.5?) (two possible conference deadlines)
+%	\end{enumerate}
+%	\item ???
 \end{enumerate}
 %\end{comment}
 
+\section{References}
+[1] Beck, F., Koch, S., and Weiskopf, D. ``Visual Analysis and Dissemination of Scientific Literature Collections with SurVis." In: IEEE Transactions on Visualization and Computer Graphics (2015) (to appear).
+\\
+
+\noindent
+[2] ``The Gestalt Principles." http://graphic design.spokanefalls.edu/tutorials/process/ge-staltprinciples/gestaltprinc.htm\\
 \end{document}
